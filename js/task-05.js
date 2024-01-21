@@ -12,4 +12,4 @@ const changeTextSpam = () => {
   }
 };
 
-textInput.addEventListener('input', changeTextSpam);
+nameInput.addEventListener('input', changeTextSpam);
