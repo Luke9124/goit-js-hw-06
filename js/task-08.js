@@ -14,9 +14,9 @@ loginForm.addEventListener('submit', function (event) {
   }
 
   const formData = {
-    email = emailInput.value;
-    password = passwordInput.value;
-  }
+    email = emailInput.value,
+    password = passwordInput.value,
+  };
 
   console.log(formData);
   this.reset();
