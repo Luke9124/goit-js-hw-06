@@ -22,4 +22,4 @@ ingredients.forEach(ingredient => {
   newFragment.appendChild(newListItem);
 });
 
-ingredientList = appendChild(newFragment);
+ingredientList.appendChild(newFragment);
