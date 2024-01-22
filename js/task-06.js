@@ -5,7 +5,8 @@ const validationInput = document.querySelector('#validation-input');
 // const validationAttribute = validationInput.getAttribute('data-length');
 
 const validationAttribute = parseInt(
-  validationInput.getAttribute('data-length')
+  validationInput.getAttribute('data-length'),
+  10
 );
 
 const doValidation = () => {
