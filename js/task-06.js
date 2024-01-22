@@ -5,17 +5,17 @@ const validationInput = document.querySelector('#validation-input');
 // const validationAttribute = validationInput.getAttribute('data-length');
 
 const validationAttribute = parseInt(
-  validationInput.getAttribute('data-length'),
+  validationInput.getAttribute('data-length') || '0',
   10
 );
 
 const doValidation = () => {
   if (validationInput.value.length === validationAttribute) {
-    validationInput.classList.add('invalid');
-    validationInput.classList.remove('valid');
-  } else {
-    validationInput.classList.add('valid');
     validationInput.classList.remove('invalid');
+    validationInput.classList.add('valid');
+  } else {
+    validationInput.classList.remove('valid');
+    validationInput.classList.add('invalid');
   }
 };
 
