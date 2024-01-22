@@ -2,7 +2,11 @@
 
 const validationInput = document.querySelector('#validation-input');
 
-const validationAttribute = validationInput.getAttribute('data-length');
+// const validationAttribute = validationInput.getAttribute('data-length');
+
+const validationAttribute = parseInt(
+  validationInput.getAttribute('data-length')
+);
 
 const doValidation = () => {
   if (validationInput.value.length === validationAttribute) {
