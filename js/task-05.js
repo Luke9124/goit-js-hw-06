@@ -5,7 +5,7 @@ const nameOutput = document.querySelector('#name-output');
 const defaultText = nameOutput.innerHTML;
 
 const changeTextSpam = () => {
-  if (nameInput.value !== '') {
+  if (nameInput.value.trim() !== '') {
     nameOutput.innerHTML = nameInput.value;
   } else {
     nameOutput.innerHTML = defaultText;
