@@ -1,1 +1,1 @@
-# goit-js-hw-06
+https://luke9124.github.io/goit-js-hw-06/
