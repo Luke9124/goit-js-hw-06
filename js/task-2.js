@@ -19,6 +19,8 @@ class Storage {
   }
 }
 
+//   Kod potrzebuje odświeżenia strony (F5), inaczej wrzuca "Droid" w pierwszy console.log. Czytałem, że to błąd konsoli i JS.
+
 const storage = new Storage(['Nanitoids', 'Prolonger', 'Antigravitator']);
 console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
 storage.addItem('Droid');
